@@ -44,6 +44,16 @@ intro.to(headlineLetters, {
     duration: 1,
 
 })
+intro.from('nav ul li', {
+    y: 100,
+    opacity: 0,
+    ease: "power1.in",
+    stagger: {
+        amount: 0.5
+    },
+    duration: 1,
+
+})
 
 // console.log(headlineWords)
 

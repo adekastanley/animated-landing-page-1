@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
 .section-one {
     height: 100dvh;
     display: flex;
@@ -25,8 +28,8 @@
     background-size: cover;
     opacity: 0;
     background-color: blue;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 40%;
 }
 .section-one .headline{
     display: flex;
@@ -41,11 +44,24 @@
     display: inline-block;
     margin: 10px;
 }
+nav {
+    /* background-color: aqua; */
+    z-index: 10;
+    position: absolute;
+    bottom: 1rem;
+    width: 20rem;
+    left: 1rem;
+    /* background-color: red; */
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
 
+}
 @media screen and (min-width: 700px){
     .section-one .headline{
 
-        width: 50%;
+        /* width: 50%; */
 
     }
 }
@@ -55,6 +71,11 @@
 
         width: 50%;
 
+    }
+    .background-container {
+
+        width: 500px;
+        height: 500px;
     }
 
 }
