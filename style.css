@@ -6,6 +6,7 @@
 li, a {
     text-decoration: none;
     list-style: none;
+    color: white;
 }
 .section-one {
     height: 100dvh;
@@ -58,11 +59,59 @@ nav ul {
     justify-content: space-evenly;
 
 }
+
+
+
+
+.section-two {
+margin-top: 70vh;
+overflow-x: hidden;
+position: relative;
+
+}
+.container {
+    height: 100vh; 
+    width: 300%;
+    overflow: hidden;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: row-reverse;
+    
+}
+.container img {
+    width: 300px;
+}
+.section-two  .cards{
+    display: flex;
+    width: 100dvw;
+    /* width: calc(100vw * 3); */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.section-two .one {
+    /* background-color: red; */
+}   
+.section-two .two {
+    background-color: blue;
+}
+.section-two .three {
+    background-color: yellow;
+}
 @media screen and (min-width: 700px){
     .section-one .headline{
 
         /* width: 50%; */
 
+    }
+    .container img {
+        width: 500px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -76,6 +125,9 @@ nav ul {
 
         width: 500px;
         height: 500px;
+    }
+    .container img {
+        width: 500px;
     }
 
 }

@@ -11,7 +11,8 @@ intro.from(headlineLetters, {
     y: 100,
     opacity:0,
     duration: 1,
-    stagger: .5
+    stagger: .5,
+
 })
 intro.to( headlineLetters, {
 
@@ -55,11 +56,32 @@ intro.from('nav ul li', {
 
 })
 
-// console.log(headlineWords)
+gsap.registerPlugin(ScrollTrigger);
+const sections = gsap.timeline()
+
+
+// // console.log(headlineWords)
 
 
 
-// 
-// 
-// general 
-// 
+// // 
+// // 
+// // general 
+// // 
+
+
+const container = document.querySelector('.container')
+const cards = gsap.utils.toArray('.cards')
+const text = gsap.utils.toArray('.cards p')
+
+
+const scrollPage = gsap.to(container, {
+    xPercent: -100 * (cards.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+        trigger: container,
+        pin: true,
+        scrub: 1,
+        end: "+= 10"
+    }
+})
