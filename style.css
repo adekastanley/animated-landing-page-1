@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-one {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+
+
+}
+.background-container {
+    position: absolute;
+    z-index: -1;
+    /* height: 100dvh; */
+    background-image: url('./images/youtuber-korty-eo-pink-dress.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+.section-one .headline{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    /* background-color: red; */
+}
+.section-one .headline span{
+    /* width: 25%; */
+    display: inline-block;
+    margin: 10px;
+}
+
+@media screen and (min-width: 700px){
+    .section-one .headline{
+
+        width: 50%;
+
+    }
+}
+@media screen and (min-width: 1200px){
+
+    .section-one .headline{
+
+        width: 50%;
+
+    }
+
+}
+
